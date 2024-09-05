@@ -28,6 +28,10 @@ Save and exit
 logout from terminal and login and now when you use the scripts from terminal.
 
 Create symlinks to blackhole Radarr
-```br```
+```
+br
+```
 Create symlinks to blackhole Sonarr 
-```bs```
+```
+bs
+```
