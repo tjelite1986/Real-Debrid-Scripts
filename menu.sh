@@ -4,10 +4,12 @@
 echo "Choose were to create symlinks";
 echo "1. Create Symlinks Blackhole Radar"
 echo "2. Create Symlinks Blackhole Sonarr"
-echo "3. Create Symlinks Import Movies"
-echo "4. Create Symlinks Import Shows"
-echo "5. Exit from menu "
-echo -n "Enter your menu choice [1-5]: "
+echo "3. Create Symlinks Blackhole All"
+echo "4. Create Symlinks Import Movies"
+echo "5. Create Symlinks Import Shows"
+echo "6. Create Symlinks Import All"
+echo "7. Exit from menu "
+echo -n "Enter your menu choice [1-7]: "
 
 # Running a forever loop using while statement
 # This loop will run until select the exit option.
@@ -26,24 +28,30 @@ case $choice in
   # Pattern 2
   2)  ./blackhole-sonarr.sh
       echo "You Symlinks are done ";;
+  3)  ./blackhole-radarr.sh && ./blackhole-sonarr.sh
+     echo "You Symlinks are done ";;
   # Pattern 3
-  3)  ./import-movies.sh
+  4)  ./import-movies.sh
       echo "You Symlinks are done ";;
     # Pattern 4
-  4)  ./import-shows.sh
+  5)  ./import-shows.sh
+      echo "You Symlinks are done ";;
+  6)  ./import-shows.sh && ./import-movies.sh
       echo "You Symlinks are done ";;
   # Pattern 5
-  5)  echo "Quitting ..."
+  7)  echo "Quitting ..."
       exit;;
   # Default Pattern
   *) echo "invalid option";;
 
 esac
-  echo "Choose were to create symlinks";
-  echo "1. Create Symlinks Blackhole Radar"
-  echo "2. Create Symlinks Blackhole Sonarr"
-  echo "3. Create Symlinks Import Movies"
-  echo "4. Create Symlinks Import Shows"
-  echo "5. Exit from menu "
-  echo -n "Enter your menu choice [1-5]: "
+    echo "Choose were to create symlinks";
+    echo "1. Create Symlinks Blackhole Radar"
+    echo "2. Create Symlinks Blackhole Sonarr"
+    echo "3. Create Symlinks Blackhole All"
+    echo "4. Create Symlinks Import Movies"
+    echo "5. Create Symlinks Import Shows"
+    echo "6. Create Symlinks Import All"
+    echo "7. Exit from menu "
+    echo -n "Enter your menu choice [1-7]: "
 done
