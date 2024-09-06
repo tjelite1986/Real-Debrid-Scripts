@@ -28,7 +28,7 @@ case $choice in
   # Pattern 2
   2)  ./blackhole-sonarr.sh
       echo "You Symlinks are done ";;
-  3)  ./blackhole-radarr.sh && ./blackhole-sonarr.sh
+  3)  ./blackhole.sh
      echo "You Symlinks are done ";;
   # Pattern 3
   4)  ./import-movies.sh
@@ -36,7 +36,7 @@ case $choice in
     # Pattern 4
   5)  ./import-shows.sh
       echo "You Symlinks are done ";;
-  6)  ./import-shows.sh && ./import-movies.sh
+  6)  ./import.sh
       echo "You Symlinks are done ";;
   # Pattern 5
   7)  echo "Quitting ..."
