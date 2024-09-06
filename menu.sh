@@ -8,8 +8,10 @@ echo "3. Create Symlinks Blackhole All"
 echo "4. Create Symlinks Import Movies"
 echo "5. Create Symlinks Import Shows"
 echo "6. Create Symlinks Import All"
-echo "7. Exit from menu "
-echo -n "Enter your menu choice [1-7]: "
+echo "7. Check for broken Symlinks"
+echo "8. Remove broken Symlinks"
+echo "9. Exit from menu "
+echo -n "Enter your menu choice [1-9]: "
 
 # Running a forever loop using while statement
 # This loop will run until select the exit option.
@@ -38,20 +40,26 @@ case $choice in
       echo "You Symlinks are done ";;
   6)  ./import.sh
       echo "You Symlinks are done ";;
+  7)  ./broken.sh
+      echo "Check For Broken Symlinks Done ";;
+  8)  ./remove.sh
+      echo "Remove Broken Symlinks Done ";;
   # Pattern 5
-  7)  echo "Quitting ..."
+  9)  echo "Quitting ..."
       exit;;
   # Default Pattern
   *) echo "invalid option";;
 
 esac
-    echo "Choose were to create symlinks";
-    echo "1. Create Symlinks Blackhole Radar"
-    echo "2. Create Symlinks Blackhole Sonarr"
-    echo "3. Create Symlinks Blackhole All"
-    echo "4. Create Symlinks Import Movies"
-    echo "5. Create Symlinks Import Shows"
-    echo "6. Create Symlinks Import All"
-    echo "7. Exit from menu "
-    echo -n "Enter your menu choice [1-7]: "
+echo "Choose were to create symlinks";
+echo "1. Create Symlinks Blackhole Radar"
+echo "2. Create Symlinks Blackhole Sonarr"
+echo "3. Create Symlinks Blackhole All"
+echo "4. Create Symlinks Import Movies"
+echo "5. Create Symlinks Import Shows"
+echo "6. Create Symlinks Import All"
+echo "7. Check for broken Symlinks"
+echo "8. Remove broken Symlinks"
+echo "9. Exit from menu "
+echo -n "Enter your menu choice [1-9]: "
 done
