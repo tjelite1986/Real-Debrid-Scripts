@@ -11,9 +11,11 @@ To run the script do this command:
 ./menu.sh
 ```
 This is my directory setup:
+```
 /mnt/plex
 /mnt/symlinks
 /mnt/zurg
+```
 so you need to changes this if you have a different location. Edit and change it in all script files.
 
 
